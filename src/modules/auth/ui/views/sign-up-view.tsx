@@ -166,19 +166,6 @@ export const SignUpView = () => {
                 <Button type="submit" className="w-full">
                   Sign In
                 </Button>
-                <div className="after:border-border relative text-center text-sm after:absolute after:inset-0 after:top-1/2 after:z-0 after:felx after:items-center after:justify-center after:border-t">
-                  <span className="bg-card text-muted-forceground relative z-10 px-2">
-                    Or continue with
-                  </span>
-                </div>
-                <div className="grid grid-cols-2 gap-4">
-                  <Button variant="outline" className="w-full">
-                    <span className="text-sm">Google</span>
-                  </Button>
-                  <Button variant="outline" className="w-full">
-                    <span className="text-sm">GitHub</span>
-                  </Button>
-                </div>
                 <div className="text-center text-sm text-muted-foreground">
                   Don't have an account?
                   <Link

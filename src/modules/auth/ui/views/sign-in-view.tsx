@@ -121,11 +121,18 @@ export const SignInView = () => {
                     Or continue with
                   </span>
                 </div>
-                <div className="grid grid-cols-2 gap-4">
-                  <Button variant="outline" className="w-full">
-                    <span className="text-sm">Google</span>
-                  </Button>
-                  <Button variant="outline" className="w-full">
+                <div className="w-full">
+                  <Button
+                    variant="outline"
+                    type="button"
+                    className="w-full"
+                    onClick={() => {
+                      authClient.signIn.social({
+                        provider: "github",
+                        callbackURL: "/",
+                      });
+                    }}
+                  >
                     <span className="text-sm">GitHub</span>
                   </Button>
                 </div>
